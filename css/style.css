@@ -1,0 +1,102 @@
+body {
+    background: linear-gradient(180deg, #f39c12 0%, #d35400 100%);
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 40px 20px;
+    min-height: 100vh;
+}
+
+/* Encabezado */
+.header-box {
+    background-color: #f1c40f;
+    padding: 15px 50px;
+    border: 2px solid #2c3e50;
+    border-radius: 12px;
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 50px;
+    box-shadow: 4px 4px 0px #2c3e50;
+}
+
+/* Contenedor de Botones */
+.grid-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 25px;
+    width: 100%;
+    max-width: 1150px;
+}
+
+/* Tarjeta / Botón */
+.btn-card {
+    background-color: #f1c40f;
+    border: 2px solid #2c3e50;
+    border-radius: 40px;
+    width: 320px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    color: #2c3e50;
+    display: flex;
+    flex-direction: column;
+}
+
+.btn-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 15px 25px rgba(0,0,0,0.3);
+}
+
+/* Imágenes dentro de los botones */
+.card-image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-bottom: 2px solid #2c3e50;
+}
+
+/* Texto de las tarjetas */
+.card-content {
+    padding: 20px;
+    text-align: left;
+}
+
+.btn-card h2 {
+    font-size: 20px;
+    margin: 0 0 10px 0;
+    line-height: 1.2;
+}
+
+.btn-card p {
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 0;
+    color: #34495e;
+}
+
+.footer-ws {
+    margin-top: 50px;
+    background-color: #f1c40f; /* Amarillo original */
+    padding: 12px 60px;
+    border: 2px solid #2c3e50;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-weight: bold;
+    font-size: 22px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #2c3e50;
+    
+    /* Transición suave para todos los cambios */
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.ws-icon {
+    width: 30px;
+}
